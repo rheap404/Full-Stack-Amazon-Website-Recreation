@@ -33,3 +33,21 @@
     flex: 0.8;
     margin-left: 100px;
 }
+
+
+.payment_details form {
+    max-width: 400px;
+}
+
+.payment_details h4 {
+    padding-bottom: 20px;
+}
+
+.payment_details form div button {
+    width: 120px;
+    background-color: rgb(238, 183, 43);
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: rgb(197, 141, 2)rgb(197, 141, 2) rgb(197, 141, 2);
+    color: #111;
+}
