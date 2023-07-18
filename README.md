@@ -7,12 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Features
 This project aims to replicate several core features of the Amazon website, including:
 
-User registration and authentication
-Product browsing and searching
-Shopping cart functionality
-Checkout and payment processing
-Order tracking and history
-Product reviews and ratings
+- User registration and authentication
+- Product browsing and searching
+- Shopping cart functionality
+- Checkout and payment processing
+- Order tracking and history
+- Product reviews and ratings
 
 ## Available Scripts
 
