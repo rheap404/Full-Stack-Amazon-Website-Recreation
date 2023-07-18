@@ -1,0 +1,48 @@
+.subHeader {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position:static;
+    background-color: #232f3e;
+    top: 0;
+    z-index: 100
+}
+
+.subHeader_menu {
+    display: flex;
+    padding: 10px;
+}
+
+.subHeader_menu p {
+    padding: 9px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #232f3e;
+    
+}
+
+.subHeader_menu p:hover {
+    border-color: white;
+}
+
+.subHeader_Icon {
+    display: flex;
+    font-size: 15px;
+    color: white;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    align-items: center;
+    border: 1px solid #232f3e;
+}
+
+.subHeader_Icon:hover {
+    border-color: white;
+}
+
+.subHeader img {
+   margin-left: auto;
+}
+

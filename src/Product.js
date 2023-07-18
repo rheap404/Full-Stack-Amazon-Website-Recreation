@@ -1,6 +1,8 @@
 import React from 'react';
 import './Product.css';
 import { useStateValue } from './StateProvider';
+import { Link } from 'react-router-dom';
+ 
 
 function Product({id, title, image, price, rating}) {
 
@@ -20,11 +22,17 @@ function Product({id, title, image, price, rating}) {
         });
     };
 
+      const data = {id:id, title:title, image:image, price:price, rating:rating};
+
   return (
     <div className='product'>
         <div className='product_info'>
 
+        <Link to= {`/productInfo/${title}`} state={data} style={{ textDecoration: 'none' }}>
             <p>{title}</p>
+        </Link>
+                
+           
 
             <p className='product_price'>
                 <small>$</small>

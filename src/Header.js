@@ -5,6 +5,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
  function Header() {
 
@@ -17,14 +18,19 @@ import { auth } from './firebase';
   }
 
   return (
-    <div 
-        className='header'>
+    <div className='header'>
 
-          <Link to='/'>
-            <img className="header_logo" 
-            src='https://static.vecteezy.com/system/resources/previews/019/017/542/original/amazon-logo-free-png.png'/>
-          </Link>
+      <Link to='/'>
+        <img className="header_logo" 
+        src='https://static.vecteezy.com/system/resources/previews/019/017/542/original/amazon-logo-free-png.png'/>
+      </Link>
+
+      <div className='header_location'>
+        <LocationOnIcon/>
+        <p>Enter your address</p>
+      </div>
         
+
       <div
         className="header_search">
         <input
@@ -70,9 +76,13 @@ import { auth } from './firebase';
        
 
     </div>
+      
+    
+  </div>
 
+  
 
-    </div>
+    
   )
 }
  

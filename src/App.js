@@ -12,6 +12,9 @@ import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
+import SubHeader from './SubHeader';
+import ProductInfo from './ProductInfo';
+
 
 const promise = loadStripe("pk_test_51NTP3fC9zrWgPfTW7Kac7WwqfgWAbPqikDfgyzUkJPFbKixsCdzIIhOUEZYEINYOzLrB3qP2lcG2Uesw5btirv0o00DYYoeKmS");
 
@@ -43,6 +46,8 @@ function App() {
     })
   }, [])
 
+  
+
   return (
    <Router>
      <div className="app">
@@ -54,11 +59,11 @@ function App() {
         <Payment/>
        </Elements>]}/>
       
-      <Route path='/orders' element={[<Header/>,<Orders/>]}/>
+      <Route path='/orders' element={[<Header/>,<SubHeader/>,<Orders/>]}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/checkout' element={[<Header/>,<Checkout/>]}/>
-      <Route path='/' element={[<Header/>,<Home/>]}/>
-          
+      <Route path='/' element={[<Header/>,<SubHeader/>,<Home/>]}/>
+      <Route path='/productInfo/:title' element={[<Header/>,<SubHeader/>,<ProductInfo/>]}/>
         
       </Routes>
        

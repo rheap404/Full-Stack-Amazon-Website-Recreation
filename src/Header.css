@@ -10,10 +10,27 @@
 
 
 .header_logo {
-    width: 150px;
+    width: 140px;
     object-fit: contain;
     margin: 0 -2px;
     margin-top: 8px;
+}
+
+
+.header_location {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid #131921 ;
+    padding: 10px;
+}
+.header_location p {
+    font-size: 13px;
+}
+.header_location:hover {
+    border-color: white;
+    border-radius: 3px;
 }
 
 .header_search {
@@ -71,3 +88,4 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+

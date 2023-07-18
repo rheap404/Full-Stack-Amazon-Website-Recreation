@@ -22,6 +22,18 @@ function Home() {
                     price={8.99}
                     image="https://m.media-amazon.com/images/I/71umUYyjXrL._SL1500_.jpg" 
                     rating={3}/>
+
+
+                 <div className='home_ad'>
+                    <p>
+                        <h3>Today's Deals<br/></h3>
+                        <small>Looking for a Deal? Browse 1000s of Deals on top selling products</small>
+                    </p>
+                    <img src='https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/24dccd45-3202-43ca-b2af-c14aa10a8acf.jpg'/>
+                 </div>
+                    
+
+                
                 
             </div>
 
@@ -47,6 +59,9 @@ function Home() {
             </div>
 
             <div className='home_row'>
+                <div className='home_ad2'>
+                    <img src='https://m.media-amazon.com/images/S/pv-target-images/22024d3982992805951ab4570c704ce3f03422de98eeb13ca1534233b0bb3840._AC_SL1584_.jpg'/>
+                </div>
             <Product
                     id='943'
                     title="OnePlus 138.7 cm (55 inches) U Series 4K LED Smart Android TV 55U1S (Black)"

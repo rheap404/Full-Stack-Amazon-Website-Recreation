@@ -10,6 +10,7 @@
     min-width: 100px;
     background-color: white;
     z-index: 1;
+    
 }
 
 .product img {
@@ -35,10 +36,20 @@
     border-color: rgb(197, 141, 2)rgb(197, 141, 2) rgb(197, 141, 2);
     color: #111;
 }
+.product button:hover {
+    cursor: pointer;
+}
+.product button:active {
+   background-color: rgb(202, 147, 9);
+}
 
 .product_info {
     height: 100px;
     margin-bottom: 15px;
+   
+}
+.product_info p {
+    color: black;
 }
 
 .product_rating {
